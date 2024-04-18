@@ -11,6 +11,9 @@ plugins {
 group = "com.senemoglu"
 version = "0.0.1-SNAPSHOT"
 
+val openApiVersion = "2.3.0"
+val feignVersion = "4.0.3"
+
 java {
     sourceCompatibility = JavaVersion.VERSION_17
 }
@@ -26,7 +29,11 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 
-    implementation("org.springframework.cloud:spring-cloud-starter-openfeign:4.0.3")
+    implementation("org.springframework.cloud:spring-cloud-starter-openfeign:$feignVersion")
+
+    // Spring Documentation
+    implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:$openApiVersion")
+    implementation("org.springdoc:springdoc-openapi-starter-common:$openApiVersion")
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
