@@ -6,6 +6,7 @@ This project serves as a demonstration of scheduling jobs in a Spring Boot appli
 
 - **Scheduled Job**: Illustrates how to create scheduled tasks to perform repetitive actions at specified intervals.
 - **Feign Client Integration**: Demonstrates how to use Feign client for making HTTP requests to external services.
+- **Swagger UI Integration**: Implements Swagger UI for API documentation and testing.
 
 ## Setup
 
