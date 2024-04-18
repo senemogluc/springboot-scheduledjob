@@ -1,10 +1,11 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    id("org.springframework.boot") version "3.2.4"
-    id("io.spring.dependency-management") version "1.1.4"
-    kotlin("jvm") version "1.9.23"
-    kotlin("plugin.spring") version "1.9.23"
+    id("org.springframework.boot") version "3.1.1"
+    id("io.spring.dependency-management") version "1.1.0"
+    kotlin("jvm") version "1.8.22"
+    kotlin("kapt") version "1.8.22"
+    kotlin("plugin.spring") version "1.8.22"
 }
 
 group = "com.senemoglu"
@@ -25,8 +26,7 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 
-    implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:4.0.3")
-    implementation("org.springframework.cloud:spring-cloud-starter-openfeign:4.0.4")
+    implementation("org.springframework.cloud:spring-cloud-starter-openfeign:4.0.3")
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
