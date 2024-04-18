@@ -1,4 +1,4 @@
-# Spring Boot Kotlin Email Sender POC
+# Spring Boot Kotlin Scheduled Job with Feign Client
 
 This project serves as a demonstration of scheduling jobs in a Spring Boot application written in Kotlin, utilizing a Feign client for making HTTP requests to external services.
 
