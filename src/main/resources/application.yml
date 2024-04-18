@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: springboot-scheduled
+
+cron:
+  syncCronExpression: "0 0 * * * *"
